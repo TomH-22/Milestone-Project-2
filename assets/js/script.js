@@ -68,3 +68,12 @@ function unflipCards() {
       lockBoard = false;
     }, 1000);
   }
+
+  // Generates random numbers which are assigned as 'order' parameters for each card. 
+
+(function shuffle() {
+    cards.forEach(card => {
+      let randomPos = Math.floor(Math.random() * 100);
+      card.style.order = randomPos;
+    });
+  })();
