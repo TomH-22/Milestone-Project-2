@@ -106,6 +106,7 @@ html, body {
   grid-gap: 20px;
   width: 400px;
   height: 400px;
+  perspective: 1000px;
   -webkit-perspective: 1000px;
   border-radius: 8px;
   margin-left: auto;
@@ -122,6 +123,9 @@ html, body {
   -webkit-transform: scale(1);
   -webkit-transform-style: preserve-3d;
   -webkit-transition: transform 0.5s;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
 }
 
 img {
@@ -133,19 +137,24 @@ border-radius: 5px;
 .card:active {
   -webkit-transform: scale(0.95);
   -webkit-transition: transform .2s;
+  transform: scale(0.95);
+  transition: transform .2s;
 }
 
 .card.flip {
   -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
 .front, .back {
   position: absolute;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .front {
   -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 /* Styling of Overlay of Game Area prior to Game Start */
