@@ -95,3 +95,19 @@ html, body {
     font-family: Ubuntu Mono;
     font-size: 1rem;
   }
+
+  /* Main Game Container Styling */
+
+#gamecontainer {
+    background-color: whitesmoke;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 400px;
+    height: 400px;
+    -webkit-perspective: 1000px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
