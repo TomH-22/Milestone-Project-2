@@ -254,3 +254,22 @@ html, body {
     z-index: 95;
   }
 
+  /* Replay Button Styling */
+
+#replay {
+    background-color: rgb(190,66,61);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Ubuntu Mono;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 95;
+    }
+    
+  #replay:hover {
+    background-color: rgb(201,97,84);
+    }
+
