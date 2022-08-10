@@ -32,14 +32,14 @@ The target audience is made up of a variety of different people, ranging form ch
 ### **Logo**
 The main logo was created using Procreate: I utilised some of the existing images which I sourced for the game's cards, as well as the name of the game stylised with the `Orbitron` font, all on a dark blue background (`#262546`) which I also used for the `header` bar and as the back-face of the `card` elements.
 
-![Logo](assets/readme/logo.png)
+![Logo](assets/readme/logo.png width: 50%)
 
 ### **Navigation**
 Navigation is pretty limited as it is not really required for anything but starting and reloading the game. The player is able to start the game using a well-defined start button, then click on the cards to flip them and finally reload the game by pressing a button that is offered once the game is over. 
 
-![Game at Beginning](assets/readme/pregame.png)
+![Game at Beginning](assets/readme/pregame.png width: 50%)
 
-![Game at End](assets/readme/postgame.png)
+![Game at End](assets/readme/postgame.png width: 50%)
 
 ### **Timer & Moves**
 A small section at the top of the game area dynamically displays the time elapsed since the game was started and the moves that the player has made in the game. 
@@ -49,9 +49,9 @@ A small section at the top of the game area dynamically displays the time elapse
 ### **Game Area**
 The game area consists of a board and 16 cards: these cards are rendered face-down and include 8 sets of space-themed images on the face-down side. 
 
-![Game Area](assets/readme/start.png)
+![Game Area](assets/readme/start.png width: 50%)
 
-![Game Area - Turned](assets/readme/end.png)
+![Game Area - Turned](assets/readme/end.png width: 50%)
 
 ### **Footer**
 A footer displays the developer's name and other details, as well as link to a GitHub profile using a GitHub Favicon icon.
@@ -76,7 +76,7 @@ The HTML code was assessed using the W3C CSS Validator Tool. Again, while I did 
 ### **Lighthouse Testing**
 Assessing the site based on performance, accessibility, best practices and SEO using Chrome Developer Tools' Lighthouse test highlighted some minor issues relating to the area of best practices: it noted that an image was forced to render in a way that did not maintain the image's original aspect ratio. The image in question is that which makes up the back of the `card` elements: this does not, however, affect the user experience whatsoever, as the image is of a monotone color only and changes of dimension or aspect ratio, in this case, has no effect on the image resolution or such. 
 
-![Lighthouse Test](assets/readme/lighthouse.png)
+![Lighthouse Test](assets/readme/lighthouse.png width: 50%)
 
 ### **Cross-browser Checks and Device Testing**
 I tested the site on a variety of browsers: Edge, Opera, Safari, Firefox and Chrome. Firefox handled the overlays a little differently, particularly those elements created thorugh Javascript. Adding a `z-index` attribute to those elements which reflected the desired order on the page sorted the problem. All others rendered the site as expected. I also tested the site on Chrome and Safari within iOS - this presented no problems. 
@@ -114,6 +114,14 @@ All links were checked and worked as expected. All external links opened in a ne
 - **Clicking First Card** On occasion, when testing the application, I noted that the first card that gets flipped in the game, appears disabled and does not flip when clicked on again straight away as part of the second set of moves. This only occurs occasionally and has been difficult to reproduce but this is something I wish to get to the bottom of.  
 
 - **Page Performance and Images** Performance is a little on the slow side but this may be intrinsically linked to being an image-heavy visual application. I am sure further optimisation could be implemented but I currently lack the skills to do so.
+
+## **Deployment** 
+
+The web application was deployed via GitHub Pages, as per the following steps:
+- Within the Github repository, navigate to the "Settings" tab. 
+- Then click on "Pages" with the menu on the left side. 
+- Select the "main" or "master" branch as the source and select "Root" to the right of it. Then click on the save button.
+- The link for the page will appear on the page shortly. 
 
 ## **Attributions**
 
