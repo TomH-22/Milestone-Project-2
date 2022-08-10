@@ -111,3 +111,21 @@ html, body {
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* Card Styling and Flip Effects */
+
+.card {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transform: scale(1);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: transform 0.5s;
+  }
+  
+  img {
+  width: 84px;
+  height: 84px;
+  border-radius: 5px;
+  }
