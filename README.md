@@ -37,20 +37,26 @@ The main logo was created using Procreate: I utilised some of the existing image
 ### **Navigation**
 Navigation is pretty limited as it is not really required for anything but starting and reloading the game. The player is able to start the game using a well-defined start button, then click on the cards to flip them and finally reload the game by pressing a button that is offered once the game is over. 
 
-![Navigation Bar](assets/readme/navbar.png)
+![Game at Beginning](assets/readme/pregame.png)
+
+![Game at End](assets/readme/postgame.png)
 
 ### **Timer & Moves**
 A small section at the top of the game area dynamically displays the time elapsed since the game was started and the moves that the player has made in the game. 
 
-![Splash Image](assets/readme/splashimage.png)
+![Game Stats](assets/readme/stats.png)
 
 ### **Game Area**
 The game area consists of a board and 16 cards: these cards are rendered face-down and include 8 sets of space-themed images on the face-down side. 
 
-![Products](assets/readme/products.png)
+![Game Area](assets/readme/start.png)
+
+![Game Area - Turned](assets/readme/end.png)
 
 ### **Footer**
-A footer displays the developer's name and other details, as well as link to a GitHub profile using a GitHub Favicon icon. 
+A footer displays the developer's name and other details, as well as link to a GitHub profile using a GitHub Favicon icon.
+
+![Footer](assets/readme/footer.png)
 
 ### Multi-Device Capability**
 The application was designed using a mobile-first approach: this allowed for easy addition of media queries to handle smaller screen sizes and while being able to maintain the one feel and design across all platforms.
