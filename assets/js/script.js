@@ -55,3 +55,16 @@ function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
   }
+
+  // Locks the board so no more than two cards can be flipped at any one time, then waits 1 second before unflipping both cards if the
+// 'isMatch' variable in the 'checkForMatch' function evaluates to false. 
+
+function unflipCards() {
+    lockBoard = true;
+    setTimeout(() => {
+      firstCard.classList.remove('flip');
+      secondCard.classList.remove('flip');
+  
+      lockBoard = false;
+    }, 1000);
+  }
