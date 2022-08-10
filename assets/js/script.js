@@ -48,29 +48,29 @@ function flipCard() {
 
 function checkForMatch() {
 
-  let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-
-  isMatch ? disableCards() : unflipCards();
-  count += 1;
-  moves.innerText = `${count} `;
-  cardElement = Array.from(cardElement)
-
-  let check = cardElement.every((item) => {
-    return item.classList.contains("flip")
-  })
-  if (check) {
-    clearInterval(GameTimer);
-    setTimeout(() => {
-
-      let overlay = document.createElement('div');
-      overlay.setAttribute('id', 'wingameoverlay');
-      gameContainer.appendChild(overlay);
+    let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
   
-        overlay.innerHTML = `<p class="winheader">Mission accomplished, Space Cadet!</p><br><p class="wintext">It only took you <strong>${seconds}</strong> Seconds and <strong>${count}</strong> Moves to match all the cards!</p><br><button id="replay" onClick="window.location.reload()" role="button" aria-label="This button will reload the page so the game begins again!">Play Again?</button>`;
+    isMatch ? disableCards() : unflipCards();
+    count += 1;
+    moves.innerText = `${count} `;
+    cardElement = Array.from(cardElement)
   
-    }, 1000);
-  }
-}
+    let check = cardElement.every((item) => {
+      return item.classList.contains("flip")
+    })
+    if (check) {
+      clearInterval(GameTimer);
+      setTimeout(() => {
+  
+        let overlay = document.createElement('div');
+        overlay.setAttribute('id', 'wingameoverlay');
+        gameContainer.appendChild(overlay);
+        setTimeout(() => {
+          overlay.innerHTML = `<p class="winheader">Mission accomplished, Space Cadet!</p><br><p class="wintext">It only took you <strong>${seconds}</strong> Seconds and <strong>${count}</strong> Moves to match all the cards!</p><br><button id="replay" onClick="window.location.reload()" role="button" aria-label="This button will reload the page so the game begins again!">Play Again?</button>`;
+        }, 1500);
+      }, 1000);
+    }
+  }  
 
 // Removes ability to click on cards once they have been matched.
 
