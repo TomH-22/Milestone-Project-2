@@ -48,3 +48,10 @@ function flipCard() {
     count += 1;
     moves.innerText = `${count} `;
     cardElement = Array.from(cardElement)
+
+// Removes ability to click on cards once they have been matched.
+
+function disableCards() {
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
+  }
