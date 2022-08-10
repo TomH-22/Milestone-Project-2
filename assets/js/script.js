@@ -39,3 +39,12 @@ function flipCard() {
     secondCard = this;
     checkForMatch();
   }
+
+  function checkForMatch() {
+
+    let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+  
+    isMatch ? disableCards() : unflipCards();
+    count += 1;
+    moves.innerText = `${count} `;
+    cardElement = Array.from(cardElement)
