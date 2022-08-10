@@ -8,7 +8,6 @@
 const cards = document.querySelectorAll('.card');
 const startButton = document.getElementById('start');
 const time = document.getElementById('timeelapsed');
-const pairs = document.getElementById('matches');
 const moves = document.getElementById('movesmade');
 const gameContainer = document.getElementById('gamecontainer');
 const startOverlay = document.getElementById('startgameoverlay');
@@ -16,10 +15,11 @@ const startOverlay = document.getElementById('startgameoverlay');
 let cardElement = document.getElementsByClassName("card");
 let hasFlippedCard = false;
 let lockBoard = false;
-let firstCard 
-let secondCard
+let firstCard ;
+let secondCard;
 let count = 0;
 let seconds = -1;
+let GameTimer;
 
 // Flips card on mouse click; ensures that only two cards can be turned over at a time. 
 // If two cards are 'flipped', the 'checkForMatch' function is executed.
@@ -53,11 +53,11 @@ function checkForMatch() {
     isMatch ? disableCards() : unflipCards();
     count += 1;
     moves.innerText = `${count} `;
-    cardElement = Array.from(cardElement)
+    cardElement = Array.from(cardElement);
   
     let check = cardElement.every((item) => {
-      return item.classList.contains("flip")
-    })
+      return item.classList.contains("flip");
+    });
     if (check) {
       clearInterval(GameTimer);
       setTimeout(() => {
