@@ -59,3 +59,39 @@ html, body {
     font-family: Ubuntu Mono;
     text-align: center;
   }
+
+/* Styling to Stats Area & Elements Within*/
+
+.stats {
+    background-color: whitesmoke;
+    max-width: 440px;
+    min-width: 440px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 7px;
+    margin-bottom: 20px;
+  }
+  
+  .statscontent {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .number {
+    color: black;
+    font-family: Ubuntu Mono;
+    font-size: 1rem;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  
+  .label {
+    color: black;
+    font-family: Ubuntu Mono;
+    font-size: 1rem;
+  }
