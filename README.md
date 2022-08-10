@@ -1,8 +1,10 @@
 # **Space Match - A Memory Game**
 ## **Description**
-This is a small web-based application
+This is a small web-based application which centres around a well-known game where a number of cards are presented face-down and the player, turning over only two cards at a time, must find matching pairs. The game is over once all card pairs have been matched. The theme of this game revolves around things space-related which makes it attractive to many interest groups, particularly to kids.
 
-The live page can be found here: [Arán Bakehouse](https://tomh-22.github.io/Milestone-Project-1/)
+The application has been optimised to work on any kind of device, be that a mobile phone, tablet, laptop or desktop.
+
+The live page can be found here: [Space Match - A Memory Game](https://tomh-22.github.io/Milestone-Project-1/)
 
 <br>
 
@@ -11,82 +13,47 @@ The live page can be found here: [Arán Bakehouse](https://tomh-22.github.io/Mil
 <br>
 
 # **Development**
-The project was developed using HTML and CCS as the primary languages and an emphasis was placed on good UX design and best practice.
+The web-based application was developed using HTML,CCS and Javascript as the primary languages and an emphasis was placed on good UX design and best practice.
 
 ## **Users and Target Audience**
 
 ### **Target Audience**
-The target audience is made up of both locals and visitors to the area who would like to find out if there was a place to pick up some bread, a pastry or a nice coffee. The area is quite 'touristy', with people coming to Doolin as part of a trip to the Aran Islands or a visit to the Cliffs of Moher. As the bakery is small and located off the main road, it may be easily missed, so a good online presence is essential.
+The target audience is made up of a variety of different people, ranging form children and young adults, to adults and elderly people. While the design is primarily aimed at children, the game may be useful to all users in terms of being a good mind-excercise tool, strengthening a user's memory and other mental faculties. The game has a competitive edge too: as the time as well as the moves are displayed, users may challenge one another to complete the game in the shortest time and fewest moves possible. 
 
 ### **User Stories**
-- A **New User** wants to be able to find the website on Google in the first place, so good SEO and valid code are important. Such as user wants to see easy-to-find information on offerings, location, opening hours and contact information. In the case of a person with certain disabilities, this person still wants to be able to use the site - perhaps with the help of assistive technologies - so this has to be considered.
+- A **New User** wants to be able to be able to understand the game's function and rules right away, as well as being able to operate the game's controls intuitively. 
 
-- An **Existing User** wants to be able to return to the website and quickly be able to see if any information has changed, or quickly navigate to a section they have been to before but have forgotten the information within, e.g. opening hours, telephone number. Additionally, a previous user may wish to use the contact form to contact the business. 
+- An **Existing User** might want to be able to play the game on a different device than the last time, and expects the game to work equally well on all devices. The may want to visit the developer's GitHub profile to find out more about how the game works from a programming perspective. 
 
-## **Design & Structure**
-
-### **Color Scheme**
-The colour scheme was kept very simple and clean, with a lot of white `(#FFFFFF)`, a shade of orange `(#FCD386)` as well as a light grey `(#F5F5F5)`. Additionally, for e.g. hover effects, the `opacity` attribute was used to style elements. The main text is rendered as black on white. Overall, the site provides good contrast and viewing experience.
-<br><br>
-![Colour Palette](assets/readme/colours.png)
-
-### **Layout**
-The layout was kept clean and free of clutter, using a one-page design: main sections are seperated by a header bar and sub-sections are kept visually seperated using a grid-based card design.
-### **Fonts**
-The main fonts used were provided by Google Fonts, and are named `Doppio One` and `Spectral`. The former was used in the main logo and for the headers while the `Spectral` font was used for the text content. I felt these complemented each other very well and made it easy to distinguish heading- and body text. Back-up fonts of `sans-serif` and `serif` were used respectively, in line with the type of preferred font. 
-<br><br>
-![Doppio One Font](assets/readme/doppioone.png) ![Spectral Font](assets/readme/spectral.png)
-
-### **Images**
-Images used were procured from `Pexels.com` and were resized according to requirements. They were also converted to `.webp` format in an effort to ensure quality, size and loading performance. Colour tone was adjusted to preference using a mixture of `opacity` attributes and gradient overlays. Images were rounded using the `border-radius` attribute, which worked very well. Lastly, a favicon was added to the page: this was constructed from part of the logo design elements and re-sized accordingly.
-### **Logo**
-I designed the main logo specifically for the page using Procreate. I isolated the main drawing from a licence-free artwork and added text to it before converting it to an appropriately-size `.webp` file.
+- An **Admin User** might want to update the game by changing the images on the cards: this can easily be achieved even by someone who might not be very familiar with coding due to clean and readable code and appropriate commentary. 
 
 ## **Features**
 
 ### **Logo**
-The main logo is positioned at the top of the page and illustrates the branding of the business. Its design was discussed above. 
+The main logo was created using Procreate: I utilised some of the existing images which I sourced for the game's cards, as well as the name of the game stylised with the `Orbitron` font, all on a dark blue background (`#262546`) which I also used for the `header` bar and as the back-face of the `card` elements.
 
 ![Logo](assets/readme/logo.png)
 
-### **Navigation Bar**
-The navigation bar is static, and while I would have preferred it to be 'sticky', this did not fit within the scope of the project and was not really required given the amount of content within the site. It is laid out in such a way as to direct the user to the most important sections right away, as per user experience design requirements. 
+### **Navigation**
+Navigation is pretty limited as it is not really required for anything but starting and reloading the game. The player is able to start the game using a well-defined start button, then click on the cards to flip them and finally reload the game by pressing a button that is offered once the game is over. 
 
 ![Navigation Bar](assets/readme/navbar.png)
 
-### **Splash Image with Promo Text**
-The splash image provides visual appeal to the user and provides a way to showcase aspects of the business. It contains a promotional message overlay that can be amended to suit, as well as a button style link that can perform a suitable action. In this case it brings the user to the 'contact' section.
+### **Timer & Moves**
+A small section at the top of the game area dynamically displays the time elapsed since the game was started and the moves that the player has made in the game. 
 
 ![Splash Image](assets/readme/splashimage.png)
 
-### **Product Highlights Section**
-This consists of three 'cards', highlighting some of the business' key products. The layout can be changed in that columns could easily be added or removed depending on requirements. All sections are based on a `display: grid;` layout.
+### **Game Area**
+The game area consists of a board and 16 cards: these cards are rendered face-down and include 8 sets of space-themed images on the face-down side. 
 
 ![Products](assets/readme/products.png)
 
-### **Google Map**
-The Google map was added to illustrate the business' location and provide interesting content. It was sized and styled in accordance with the site's overall design. I experimented with various map styles and settled on a monotone style which I implemented using a `greyscale` style attribute. 
-
-### **Table with Opening Hours**
-I utilised a table element to display the bakery's opening hours. This makes the formating consistent and the content easy to amend. I achieved seperation of the table header containing the days of the week from the table data containing the hours by adding an empty `td` element with a `width: 50px` attribute. 
-
-![Map and Opening Hours](assets/readme/mapandhours.png)
-
-### **Contact Form**
-The contact form is similar to the one that we used during the 'Love Running' code along and captures simple data: name, email address and a message. I applied custom styling, in line with rest of th page, and made sure that a requirement to complete all fields was added. I omitted any newsletter sign-up options as I felt it was not required here. I used the Code Institute's default form post method, and submitting the form results in a new tab being opened which displays a success message. Ideally, I would have liked to add additional functionality to the form but I felt this would require Javascript.
-
-### **Social Media Links**
-I added social media links to the 'contact' section of the page: I made use of Fontawesome icons which I styled with a `:hover` attribute. All external links open in a new tab which is also stated in the `aria-label`. 
-
-![Get in Touch Section](assets/readme/getintouch.png)
-
 ### **Footer**
-The footer contains some copyright info and a short funny message. It is styled similarly to the section headers but a seperate class to style the text content.
+A footer displays the developer's name and other details, as well as link to a GitHub profile using a GitHub Favicon icon. 
 
-### **Arrow Icon**
-Every section header, as well as the footer, incorporates a small arrow icon which, when clicked, will bring the user back to the top of the page. On hover, a 'Back to Top!' message is displayed.
-
-![Footer](assets/readme/footer.png)
+### Multi-Device Capability**
+The application was designed using a mobile-first approach: this allowed for easy addition of media queries to handle smaller screen sizes and while being able to maintain the one feel and design across all platforms.
 
 ## **Testing, Validation and Compatibility**
 
@@ -118,10 +85,6 @@ I added a media query feature which alters the layout of the page once the `vw` 
 
 All links were checked and worked as expected. All external links opened in a new tab. 
 
-### **Contact Form**
-
-The contact form was checked and worked as expected. The field validation worked also.
-
 ## **Technologies and Resources Used**
 
 - **Fontawesome** I used this to display icons on the site.
@@ -142,13 +105,7 @@ The contact form was checked and worked as expected. The field validation worked
 
 - **Pexels** A site providing free stock images, which I used within my page.
 
-- **Google Maps API** I used this to diplay a location map on the site. 
-
 - **Convertio** I used this to convert images to a suitable format, `.webp` in this case. 
-
-- **Befunky** I used this site to edit images on the fly: resizing, cropping and colour profile edits.
-
-- **Freepik** I obtained the illustration that makes up part of the main logo from this site. 
 
 ## **Known Bugs and Issues**
 
@@ -163,15 +120,11 @@ And lastly,
 - **Page Performance and Images** While I already optimised all of the images in terms of size and file type, I note that the images, while being sized down appropriately as part of the media query feature on smaller screens, are still of a large intrinsic dimension and file size to make them render well on large screens. I could have uploaded images of reduced dimensions and file size to render as part of the media query and thus improved loading times and general performance on smaller screen devices.
 
 ## **Attributions**
+
 - `bakery.webp`: original image by Daria Shevsova on [Pexels](https://www.pexels.com/photo/two-black-bicycles-beside-gray-frame-glass-window-880467/)
 
 - `bread.webp`: original image by Kira Schwarz on [Pexels](https://www.pexels.com/photo/close-up-shot-of-sourdough-bread-in-a-tray-10200851/)
 
-- `coffee.webp`: original image by Anna Tarazevich on [Pexels](https://www.pexels.com/photo/a-person-holding-stainless-mug-while-steaming-milk-4927154/)
-
-- `pastries.webp`: original image by Shameel Mukkath on [Pexels](https://www.pexels.com/photo/breads-on-wooden-tray-5112517/)
-
-- `logo.webp` and `favicon.webp`: original image by 'pikisuperstar' on [Freepik](https://www.freepik.com/free-vector/homemade-bakery-background_4335366.htm)
 
 ## **Thank You**
 - First and foremost, thank you very much to my better half Danielle for all the support and encouragement!
