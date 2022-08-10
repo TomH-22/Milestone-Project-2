@@ -163,3 +163,20 @@ html, body {
     flex-direction: column;
   }
 
+  #start {
+    background-color: rgb(190,66,61);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Ubuntu Mono;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 99;
+    }
+    
+  #start:hover {
+    background-color: rgb(201,97,84);
+    }
+
