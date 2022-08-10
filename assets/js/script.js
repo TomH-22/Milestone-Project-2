@@ -49,6 +49,12 @@ function flipCard() {
     moves.innerText = `${count} `;
     cardElement = Array.from(cardElement)
 
+    let check = cardElement.every((item) => {
+        return item.classList.contains("flip")
+      })
+      if (check) {
+        clearInterval(GameTimer);
+
 // Removes ability to click on cards once they have been matched.
 
 function disableCards() {
