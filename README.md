@@ -73,9 +73,9 @@ Assessing the site based on performance, accessibility, best practices and SEO u
 ![Lighthouse Test](assets/readme/lighthouse.png)
 
 ### **Cross-browser Checks and Device Testing**
-I tested the site on a variety of browsers: Edge, Opera, Safari, Firefox and Chrome. All rendered the site as expected. I also tested the site on Chrome and Safari within iOS - this presented no problems. 
+I tested the site on a variety of browsers: Edge, Opera, Safari, Firefox and Chrome. Firefox handled the overlays a little differently, particularly those elements created thorugh Javascript. Adding a `z-index` attribute to those elements which reflected the desired order on the page sorted the problem. All others rendered the site as expected. I also tested the site on Chrome and Safari within iOS - this presented no problems. 
 
-I added a media query feature which alters the layout of the page once the `vw` becomes less than `800px` to a format more suitable for mobile devices and smaller screens. These design changes work well up to a `vw` of `315px` at which point the layout becomes constrained. I could have added more styles as part of a further media query but decided against it as even a small mobile device offers a screen width of at least 320px nowadays. 
+I added a media query feature which alters the layout of the page once the `vw` becomes less than `450px` to a format more suitable for mobile devices and smaller screens. These design changes work well up to a `vw` of `315px` at which point the layout becomes constrained. I could have added more styles as part of a further media query but decided against it as even a small mobile device offers a screen width of at least 320px nowadays. 
 
 ### **Links**
 
@@ -99,31 +99,19 @@ All links were checked and worked as expected. All external links opened in a ne
 
 - **Procreate** An iPad app I used to create the site's logo.
 
-- **Pexels** A site providing free stock images, which I used within my page.
+- **Adobe Srock** A subscription-based site providing stock illustrations, which I used within the application.
 
 - **Convertio** I used this to convert images to a suitable format, `.webp` in this case. 
 
 ## **Known Bugs and Issues**
 
-- **Arrow Icon Link** The arrow icon link which, when clicked, brings the user back to the top of the page is currently aligned or styled in such a manner that it off-sets the text content of the section header a number of pixels to the left, causing it to be centrally aligned no longer. It does not impair functionality and would probably go unnoticed by most, but I would like to see it fixed. 
+- **Clicking First Card** On occasion, when testing the application, I noted that the first card that gets flipped in the game, appears disabled and does not flip when clicked on again straight away as part of the second set of moves. This only occurs occasionally and has been difficult to reproduce but this is something I wish to get to the bottom of.  
 
-- **Layout Features with `<br>` Element** I have used a very small number of these elements to adjust spacing within the page which is not a valid use for this element. A fix would involve using either `padding` or `margin` attributes to achieve the desired spacing. 
-
-- **Media Query & Layout Issues** As briefly mentioned above, when using a small screen with a `vw` of less than `315px` the layout becomes problematic. While this is unlikely to occur frequently, I could have added another media query feature to adjust the styling further, based on screen with such a small width.
-
-And lastly, 
-
-- **Page Performance and Images** While I already optimised all of the images in terms of size and file type, I note that the images, while being sized down appropriately as part of the media query feature on smaller screens, are still of a large intrinsic dimension and file size to make them render well on large screens. I could have uploaded images of reduced dimensions and file size to render as part of the media query and thus improved loading times and general performance on smaller screen devices.
+- **Page Performance and Images** Performance is a little on the slow side but this may be intrinsically linked to being an image-heavy visual application. I am sure further optimisation could be implemented but I currently lack the skills to do so.
 
 ## **Attributions**
 
-- `bakery.webp`: original image by Daria Shevsova on [Pexels](https://www.pexels.com/photo/two-black-bicycles-beside-gray-frame-glass-window-880467/)
+- All of the images used in this project came from Adobe Stock. The set is titled "Space - set of flat design infographics elements" and is by Boyko.Pictures. I purchased a standard licence for same on [Adobe Stock](https://stock.adobe.com/).
 
-- `bread.webp`: original image by Kira Schwarz on [Pexels](https://www.pexels.com/photo/close-up-shot-of-sourdough-bread-in-a-tray-10200851/)
-
-
-## **Thank You**
-- First and foremost, thank you very much to my better half Danielle for all the support and encouragement!
-- Thank you to my fellow students for keeping the Slack Channel going and providing solutions to problems before I even encounter them. 
-- Thank you to my mentor, Daisy McGirr, whom I regrettably underutilised during this project: look forward to picking your brain on the upcoming ones. 🖖🏼 
+- The Javascript code used to make the application work is based on a tutorial by Marina Ferreira: I utilised some of this code but adjusted and built on it significantly to incorporate a timer, a move counter and the ability create and remove DOM elements based on user actions. The tutorial and associated code can be found on [Github](https://marina-ferreira.github.io/projects/js/memory-game/).
 
