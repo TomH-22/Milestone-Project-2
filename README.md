@@ -68,11 +68,7 @@ The HTML code was assessed using the W3C CSS Validator Tool. Again, while I did 
 ![CSS Validation](assets/readme/css.png)
 
 ### **Lighthouse Testing**
-Assessing the site based on performance, accessibility, best practices and SEO using Chrome Developer Tools' Lighthouse test highlighted a number of issues which prompted me to make a number of changes prior to deployment:
-- I addressed accessibility issues by adding relevant attributes to some elements, i.e. `aria-label`, `title`, `alt` text and such. 
-- I addressed performance issues by reducing image file sizes and re-uploading them in a `.webp` format. Additionally, I added fall-back fonts and added additional code to improve initial page load speed. 
-- I addressed a few other minor issues as recommended by the report to bring the overall score up into the green area. 
-A number of issues highlighted were as a result of third-party code which did not affect functionality, such as the Google Maps API, Google Fonts and the Fontawesome script but I did not address these.  
+Assessing the site based on performance, accessibility, best practices and SEO using Chrome Developer Tools' Lighthouse test highlighted some minor issues relating to the area of best practices: it noted that an image was forced to render in a way that did not maintain the image's original aspect ratio. The image in question is that which makes up the back of the `card` elements: this does not, however, affect the user experience whatsoever, as the image is of a monotone color only and changes of dimension or aspect ratio, in this case, has no effect on the image resolution or such. 
 
 ![Lighthouse Test](assets/readme/lighthouse.png)
 
