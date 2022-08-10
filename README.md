@@ -4,7 +4,7 @@ This is a small web-based application which centres around a well-known game whe
 
 The application has been optimised to work on any kind of device, be that a mobile phone, tablet, laptop or desktop.
 
-The live page can be found here: [Space Match - A Memory Game](https://tomh-22.github.io/Milestone-Project-1/)
+The live page can be found here: [Space Match - A Memory Game](https://tomh-22.github.io/Milestone-Project-2/)
 
 <br>
 
@@ -76,7 +76,7 @@ The HTML code was assessed using the W3C CSS Validator Tool. Again, while I did 
 ### **Lighthouse Testing**
 Assessing the site based on performance, accessibility, best practices and SEO using Chrome Developer Tools' Lighthouse test highlighted some minor issues relating to the area of best practices: it noted that an image was forced to render in a way that did not maintain the image's original aspect ratio. The image in question is that which makes up the back of the `card` elements: this does not, however, affect the user experience whatsoever, as the image is of a monotone color only and changes of dimension or aspect ratio, in this case, has no effect on the image resolution or such. 
 
-![Lighthouse Test](assets/readme/lighthouse.png width: 50%)
+![Lighthouse Test](assets/readme/lighthouse.png)
 
 ### **Cross-browser Checks and Device Testing**
 I tested the site on a variety of browsers: Edge, Opera, Safari, Firefox and Chrome. Firefox handled the overlays a little differently, particularly those elements created thorugh Javascript. Adding a `z-index` attribute to those elements which reflected the desired order on the page sorted the problem. All others rendered the site as expected. I also tested the site on Chrome and Safari within iOS - this presented no problems. 
