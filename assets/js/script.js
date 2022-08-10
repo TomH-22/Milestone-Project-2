@@ -94,3 +94,8 @@ function allowClicks() {
     time.innerText = `${seconds} `;
   }
   
+  // Removes the initial overlay and start button from the DOM.
+
+function removeStartOverlay() {
+    startOverlay.parentNode.removeChild(startOverlay);
+  }
