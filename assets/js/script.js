@@ -77,3 +77,20 @@ function unflipCards() {
       card.style.order = randomPos;
     });
   })();
+
+  // Adds 'click' ability to cards and executes functions to start timer and remove the initial overlay and start button.
+
+function allowClicks() {
+    cards.forEach(card => card.addEventListener('click', flipCard));
+    GameTimer = setInterval(startTimer, 1000);
+    removeStartOverlay();
+    startTimer();
+  }
+  
+  // Sets timer parameters and outputs increments to DOM.
+  
+  function startTimer() {
+    seconds += 1;
+    time.innerText = `${seconds} `;
+  }
+  
