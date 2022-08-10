@@ -1,3 +1,32 @@
-body {
-    background-color: red;
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Orbitron|Ubuntu+Mono");
+
+/* General Styling */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+/* Header Styling */
+
+#headerdiv {
+  background-color: #262546;
+  min-width: 440px;
+  margin-bottom: 20px;
+}
+
+.logocontainer {
+  background-color: #262546;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 400px;
+  height: auto;
 }
