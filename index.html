@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,30 +15,36 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="assets/images/favicon-32x32.png" rel="icon" sizes="32x32">
     <script src="https://kit.fontawesome.com/b0457a02e9.js" crossorigin="anonymous"></script>
-  </head>
+</head>
 <body>
 
     <!-- Header Bar and Logo-->
-    
+
+    <header>
     <div id="headerdiv">
         <div class="logocontainer">
             <img class="logo" src="assets/images/logo.webp" alt="Main Logo" aria-label="This is the page's main logo: it depicts three space-themed cards and the words Space Match.">
         </div>
     </div>
+    </header>
 
     <!-- Main Application Content-->
-    
+
+    <main>
     <div id="main-content">
 
     <!-- Instructions Box -->
-          
+
+        <section>
         <div class="instructions">
             <p class="userinstruct">How to Play?</p>
             <p class="userinstruct-p">This is a fun space-themed memory game! Once you click "Let's Go" the timer starts and it's up to you to match all the pairs in as little time as possible. Let the countdown begin: 3....2....1....Lift Off!</p>
         </div>
+        </section>
 
     <!-- Timer and Number of Moves Display -->
-      
+
+        <section>
         <div class="stats">
             <div class="statscontent">
                 <i class="fa-solid fa-stopwatch-20"></i>
@@ -51,9 +57,11 @@
                 <span class="label">Moves</span>
             </div>
         </div>
+        </section>
 
     <!-- Game Area containing the Cards-->
-      
+        
+        <section>
         <div id="gamecontainer">
             <div class="card" data-framework="comet">
                 <img class="front" src="assets/images/comet.webp" alt="Comet" aria-label="This is the Comet Card!">
@@ -119,7 +127,7 @@
                 <img class="front" src="assets/images/station.webp" alt="Station" aria-label="This is the Station Card!">
                 <img class="back" src="assets/images/back.webp" alt="Back" aria-label="This is the back of the card!">
             </div>
-        
+    
 
     <!-- Overlay at Game Start-->
         
@@ -128,16 +136,20 @@
             </div>
 
         </div>
+        </section>
     </div>
-    
+    </main>
+
     <!-- Footer-->
-      
+
+    <footer> 
     <div class="footer">
         <div class="f1">
             <a href="https://github.com/TomH-22" class="ghicon" target="_blank" title="My GitHub Profile!" aria-label="This link will take you to my GitHub profile. (Opens in new Tab!)"><i class="fa-brands fa-github"></i></a>
             <span class="footertext">Developed by Tom Hilgers in 2022!</span>
         </div>
     </div>
+    </footer>
 <br>
 <script src="assets/js/script.js"></script>
 </body>
