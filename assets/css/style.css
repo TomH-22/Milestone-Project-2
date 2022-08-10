@@ -129,3 +129,20 @@ html, body {
   height: 84px;
   border-radius: 5px;
   }
+
+  .card:active {
+    -webkit-transform: scale(0.95);
+    -webkit-transition: transform .2s;
+  }
+  
+  .card.flip {
+    -webkit-transform: rotateY(-180deg);
+  }
+  
+  .front, .back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+  }
+  
+  .front {
+    -webkit-transform: rotateY(180deg);
