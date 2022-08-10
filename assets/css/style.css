@@ -148,4 +148,18 @@ html, body {
     -webkit-transform: rotateY(180deg);
   }
 
-  
+  /* Styling of Overlay of Game Area prior to Game Start */
+
+#startgameoverlay {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(38,38,70,0.85);
+    padding: 20px;
+    border-radius: 7px;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+    flex-direction: column;
+  }
+
