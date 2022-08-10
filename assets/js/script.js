@@ -20,3 +20,22 @@ let firstCard
 let secondCard
 let count = 0;
 let seconds = -1;
+
+// Flips card on mouse click; ensures that only two cards can be turned over at a time. 
+// If two cards are 'flipped', the 'checkForMatch' function is executed.
+
+function flipCard() {
+    if (lockBoard) return;
+  
+    if (this === firstCard) return;
+    this.classList.add('flip');
+  
+    if (!hasFlippedCard) {
+      hasFlippedCard = true;
+      firstCard = this;
+      return;
+    }
+    hasFlippedCard = false;
+    secondCard = this;
+    checkForMatch();
+  }
