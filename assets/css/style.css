@@ -30,3 +30,32 @@ html, body {
   width: 400px;
   height: auto;
 }
+
+/* Instruction Card Styling */
+
+.instructions {
+    background-color: white;
+    max-width: 400px;
+    min-width: 400px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 7px;
+  }
+  
+  .userinstruct {
+    color: black;
+    font-size: 1.5rem;
+    font-family: Ubuntu Mono;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .userinstruct-p {
+    color: black;
+    font-size: 1rem;
+    font-family: Ubuntu Mono;
+    text-align: center;
+  }
