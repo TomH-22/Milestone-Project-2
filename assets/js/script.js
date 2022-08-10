@@ -99,3 +99,7 @@ function allowClicks() {
 function removeStartOverlay() {
     startOverlay.parentNode.removeChild(startOverlay);
   }
+
+  // Adds eventlistener to start button and starts the game when clicked.
+
+startButton.addEventListener("click", allowClicks);
