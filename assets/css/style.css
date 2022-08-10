@@ -274,3 +274,122 @@ border-radius: 5px;
 #replay:hover {
   background-color: rgb(201,97,84);
   }
+
+/* Media Queries */
+
+@media screen and (max-width: 450px) {
+
+/* Header Styling */
+
+#headerdiv {
+    background-color: #262546;
+    min-width: 360px;
+    margin-bottom: 20px;
+}
+  
+.logo {
+    width: 320px;
+    height: auto;
+}
+  
+/* Instruction Card Styling */
+  
+.instructions {
+    background-color: white;
+    max-width: 320px;
+    min-width: 320px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 7px;
+}
+  
+/* Styling to Stats Area & Elements Within*/
+  
+.stats {
+    background-color: whitesmoke;
+    max-width: 360px;
+    min-width: 360px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+/* Main Game Container Styling */
+  
+#gamecontainer {
+    background-color: whitesmoke;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 320px;
+    height: 320px;
+    -webkit-perspective: 1000px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+img {
+  width: 72px;
+  height: 72px;
+  border-radius: 5px;
+}
+  
+/* Styling of Overlay of Game Area prior to Game Start */
+  
+#startgameoverlay {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    background-color: rgba(38,38,70,0.85);
+    padding: 20px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+/* Footer Styling */
+  
+.footer {
+    background-color: whitesmoke;
+    max-width: 360px;
+    min-width: 360px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    border-radius: 7px;
+}
+  
+/* Game Area Overlay Styling - After Game */
+  
+#wingameoverlay {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    padding: 20px;
+    animation-name: opacityfade;
+    animation-duration: 2s;
+    border-radius: 7px;
+    background-color: rgba(38,38,70,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 90;
+}
+  
+    }
+
