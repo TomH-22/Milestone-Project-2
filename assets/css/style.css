@@ -34,242 +34,243 @@ html, body {
 /* Instruction Card Styling */
 
 .instructions {
-    background-color: white;
-    max-width: 400px;
-    min-width: 400px;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 7px;
-  }
-  
-  .userinstruct {
-    color: black;
-    font-size: 1.5rem;
-    font-family: Ubuntu Mono;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .userinstruct-p {
-    color: black;
-    font-size: 1rem;
-    font-family: Ubuntu Mono;
-    text-align: center;
-  }
+  background-color: white;
+  max-width: 400px;
+  min-width: 400px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.userinstruct {
+  color: black;
+  font-size: 1.5rem;
+  font-family: Ubuntu Mono;
+  font-weight: bold;
+  text-align: center;
+}
+
+.userinstruct-p {
+  color: black;
+  font-size: 1rem;
+  font-family: Ubuntu Mono;
+  text-align: center;
+}
 
 /* Styling to Stats Area & Elements Within*/
 
 .stats {
-    background-color: whitesmoke;
-    max-width: 440px;
-    min-width: 440px;
-    height: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-radius: 7px;
-    margin-bottom: 20px;
-  }
-  
-  .statscontent {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .number {
-    color: black;
-    font-family: Ubuntu Mono;
-    font-size: 1rem;
-    margin-left: 15px;
-    margin-right: 10px;
-  }
-  
-  .label {
-    color: black;
-    font-family: Ubuntu Mono;
-    font-size: 1rem;
-  }
+  background-color: whitesmoke;
+  max-width: 440px;
+  min-width: 440px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
 
-  /* Main Game Container Styling */
+.statscontent {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  color: black;
+  font-family: Ubuntu Mono;
+  font-size: 1rem;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.label {
+  color: black;
+  font-family: Ubuntu Mono;
+  font-size: 1rem;
+}
+
+/* Main Game Container Styling */
 
 #gamecontainer {
-    background-color: whitesmoke;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
-    width: 400px;
-    height: 400px;
-    -webkit-perspective: 1000px;
-    border-radius: 8px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  background-color: whitesmoke;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  width: 400px;
+  height: 400px;
+  -webkit-perspective: 1000px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  /* Card Styling and Flip Effects */
+/* Card Styling and Flip Effects */
 
 .card {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-transform: scale(1);
-    -webkit-transform-style: preserve-3d;
-    -webkit-transition: transform 0.5s;
-  }
-  
-  img {
-  width: 84px;
-  height: 84px;
-  border-radius: 5px;
-  }
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transform: scale(1);
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: transform 0.5s;
+}
 
-  .card:active {
-    -webkit-transform: scale(0.95);
-    -webkit-transition: transform .2s;
-  }
-  
-  .card.flip {
-    -webkit-transform: rotateY(-180deg);
-  }
-  
-  .front, .back {
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-  }
-  
-  .front {
-    -webkit-transform: rotateY(180deg);
-  }
+img {
+width: 84px;
+height: 84px;
+border-radius: 5px;
+}
 
-  /* Styling of Overlay of Game Area prior to Game Start */
+.card:active {
+  -webkit-transform: scale(0.95);
+  -webkit-transition: transform .2s;
+}
+
+.card.flip {
+  -webkit-transform: rotateY(-180deg);
+}
+
+.front, .back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+}
+
+.front {
+  -webkit-transform: rotateY(180deg);
+}
+
+/* Styling of Overlay of Game Area prior to Game Start */
 
 #startgameoverlay {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background-color: rgba(38,38,70,0.85);
-    padding: 20px;
-    border-radius: 7px;
-    display: flex;
-      justify-content: center;
-      align-items: center;
-    flex-direction: column;
-  }
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(38,38,70,0.85);
+  padding: 20px;
+  border-radius: 7px;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  flex-direction: column;
+}
 
-  #start {
-    background-color: rgb(190,66,61);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: Ubuntu Mono;
-    font-size: 1.5rem;
-    font-weight: bold;
-    z-index: 99;
-    }
-    
-  #start:hover {
-    background-color: rgb(201,97,84);
-    }
+/* Start Button Styling */
+
+#start {
+  background-color: rgb(190,66,61);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Ubuntu Mono;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 99;
+  }
+  
+#start:hover {
+  background-color: rgb(201,97,84);
+  }
 
 /* Footer Styling */
 
 .footer {
-    background-color: whitesmoke;
-    max-width: 440px;
-    min-width: 440px;
-    height: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: grid;
-    border-radius: 7px;
-  }
-  
-  .f1 {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footertext {
-    color: black;
-    font-family: Ubuntu Mono;
-    font-size: 1rem;
-    margin-left: 15px;
-    margin-right: 10px;
-  }
-  
-  .ghicon {
-    color: black;
-  }
+  background-color: whitesmoke;
+  max-width: 440px;
+  min-width: 440px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  border-radius: 7px;
+}
+
+.f1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footertext {
+  color: black;
+  font-family: Ubuntu Mono;
+  font-size: 1rem;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.ghicon {
+  color: black;
+}
 
 /* Game Area Overlay Styling - After Game */
 
 #wingameoverlay {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    padding: 20px;
-    animation-name: opacityfade;
-    animation-duration: 2s;
-    border-radius: 7px;
-    background-color: rgba(38,38,70,0.85);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 90;
-  }
-  
-  @keyframes opacityfade {
-    0%{background-color: rgba(38,38,70,0);}
-    100%{background-color: rgba(38,38,70,0.85);}
-  }
-  
-  .winheader {
-    color: white;
-    font-size: 1.5rem;
-    font-family: Ubuntu Mono;
-    text-align: center;
-    z-index: 95;
-    
-  }
-  
-  .wintext {
-    color: white;
-    font-size: 1rem;
-    font-family: Ubuntu Mono;
-    text-align: center;
-    z-index: 95;
-  }
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  animation-name: opacityfade;
+  animation-duration: 2s;
+  border-radius: 7px;
+  background-color: rgba(38,38,70,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 90;
+}
 
-  /* Replay Button Styling */
+@keyframes opacityfade {
+  0%{background-color: rgba(38,38,70,0);}
+  100%{background-color: rgba(38,38,70,0.85);}
+}
+
+.winheader {
+  color: white;
+  font-size: 1.5rem;
+  font-family: Ubuntu Mono;
+  text-align: center;
+  z-index: 95;
+  
+}
+
+.wintext {
+  color: white;
+  font-size: 1rem;
+  font-family: Ubuntu Mono;
+  text-align: center;
+  z-index: 95;
+}
+
+/* Replay Button Styling */
 
 #replay {
-    background-color: rgb(190,66,61);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: Ubuntu Mono;
-    font-size: 1.5rem;
-    font-weight: bold;
-    z-index: 95;
-    }
-    
-  #replay:hover {
-    background-color: rgb(201,97,84);
-    }
-
+  background-color: rgb(190,66,61);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Ubuntu Mono;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 95;
+  }
+  
+#replay:hover {
+  background-color: rgb(201,97,84);
+  }
