@@ -69,9 +69,12 @@ The HTML code was assessed using the W3C Mark-Up Validator Tool. While I did enc
 ![HTML Validation](assets/readme/html.png)
 
 ### **CSS Validation**
-The HTML code was assessed using the W3C CSS Validator Tool. Again, while I did encounter some syntax errors, all were fixed prior to deployment. 
+The CSS code was assessed using the W3C CSS Validator Tool. Again, while I did encounter some syntax errors, all were fixed prior to deployment. 
 
 ![CSS Validation](assets/readme/css.png)
+
+### **Javascript Validation**
+The Javascript code was assessed using the JSHint Tool. This encountered a few errors such as missing semi-colons and undefined variables: I fixed these prior to deployment.
 
 ### **Lighthouse Testing**
 Assessing the site based on performance, accessibility, best practices and SEO using Chrome Developer Tools' Lighthouse test highlighted some minor issues relating to the area of best practices: it noted that an image was forced to render in a way that did not maintain the image's original aspect ratio. The image in question is that which makes up the back of the `card` elements: this does not, however, affect the user experience whatsoever, as the image is of a monotone color only and changes of dimension or aspect ratio, in this case, has no effect on the image resolution or such. 
