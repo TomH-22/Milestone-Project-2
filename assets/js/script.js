@@ -58,6 +58,10 @@ function flipCard() {
       overlay.setAttribute('id', 'wingameoverlay');
       gameContainer.appendChild(overlay);
 
+   
+}
+}
+
 // Removes ability to click on cards once they have been matched.
 
 function disableCards() {
