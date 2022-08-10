@@ -40,6 +40,12 @@ function flipCard() {
     checkForMatch();
   }
 
+// Checks if two flipped cards match: if so, it keeps them flipped and disables cards using 'disableCards' function. 
+// If not, it will unflip the cards using 'unflipCards' function.
+// At the same, every time the function is carried out, the 'count' variable will be increased by 1.
+// This function also checks if all cards are flipped: if so, it will stop the game timer and create HTML elements
+// that make up the overlay. 
+
   function checkForMatch() {
 
     let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
